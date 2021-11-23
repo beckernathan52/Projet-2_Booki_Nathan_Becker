@@ -28,7 +28,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 0px 20px;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 header nav{
@@ -335,4 +335,3 @@ h1{
 #activities > div:nth-child(1) article a {
     background-color: #0065fc;
 }
-/*azdeazdazd*/
