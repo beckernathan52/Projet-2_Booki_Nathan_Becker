@@ -12,14 +12,14 @@ a{
     color: black;
 }
 section{
-    padding: 20px 20px;
+    padding: 20px 10px;
 }
 main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -28,7 +28,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 0px 20px;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 header nav{
@@ -45,6 +45,7 @@ header nav ul li{
     flex-basis: 50%;
     border-top: solid white 3px;
     padding-top: 10px;
+    font-size: 15px;
 }
 header nav ul > li:hover{
     border-top: 3px solid #0065fc;
@@ -54,9 +55,9 @@ header nav ul li > a{
     align-items: center;
 }
 header a > img{
-    max-width: 100px;
+    max-width: 120px;
     padding-top: 30px;
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 /* Main */
@@ -66,7 +67,10 @@ h1{
 }
 
 #mostpopular, #accommodation article a div > h3{
-    font-size: 16px;
+    font-size: 13px;
+}
+#location, #filters p{
+    font-size: 15px;
 }
 /* Location */
 
@@ -80,7 +84,7 @@ h1{
 #location form{
     display: flex;
     border: solid 1px #f2f2f2;
-    max-width: 400px;
+    max-width: 370px;
     justify-content: space-between;
     border-radius: 16px;
 }
@@ -92,11 +96,11 @@ h1{
 #location form input::placeholder{
     font-weight: bold;
     opacity: 1;
-    font-size: 16px;
+    font-size: 15px;
 }
 #location form > i{
     background-color: #f2f2f2;
-    font-size: 18px;
+    font-size: 16px;
     padding: 15px 18px;
     border-top-left-radius: 14px;
     border-bottom-left-radius: 14px;
@@ -109,8 +113,9 @@ h1{
     color: white;
     padding: 15px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
 }
+
 
 /* Filters */
 
@@ -119,7 +124,7 @@ h1{
     flex-wrap: wrap;
     align-items: center;
     padding-top: 0px;
-    padding-bottom: 40px;
+    padding-bottom: 35px;
     flex-basis: 100%;
     order: 2;
 }
@@ -131,6 +136,7 @@ h1{
     border: solid 2px #f2f2f2;
     border-radius: 29px;
     margin: 10px;
+    font-size: 15px;
 }
 #filters ul li a{
     display: flex;
@@ -154,7 +160,7 @@ h1{
 }
 #filters h2{
     margin-right: 30px;
-    font-size: 20px;
+    font-size: 18px;
 }
 #filters p{
     flex-basis: 100%;
@@ -180,47 +186,50 @@ h1{
     display: flex;
     flex-direction: column;
     border-radius: 25px;
-    row-gap: 35px;
+    row-gap: 30px;
     flex-basis: 30%;
-    padding: 40px;
+    padding: 32px;
     order: 4;
-
 }
 #mostpopular h2{
     display: flex;
     flex-basis: 100%;
     justify-content: space-between;
-    font-size: 25px;
+    font-size: 20px;
 }
 #mostpopular article{
     display: flex;
     flex-wrap: wrap;
     background-color: white;
-    border-radius: 25px;
+    border-radius: 20px;
     padding: 5px;
 }
-
 #mostpopular article > a{
     display: flex;
 }
 #mostpopular article figure{
     display: flex;
+    width: 70%;
+    height: 115px;
 }
 #mostpopular article figure > img{
-    width: 140px;
-    height: 150px;
+    display: flex;
+    width: 100%;
     object-fit: cover;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
 }
 #mostpopular article a > div{
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
-    margin-left: 10px;
     padding: 10px;
     row-gap: 10px;
     position: relative;
+    padding-left: 15px
+}
+#mostpopular article a div > p{
+    font-size: 11px;
 }
 #mostpopular article a div > div{
     display: flex;
@@ -229,7 +238,7 @@ h1{
 }
 #mostpopular article div div > i{
     color: #0065fc;
-    padding: 2px;
+    font-size: 12px;
 }
 
 
@@ -238,24 +247,27 @@ h1{
 #accommodation{
     background-color: #f2f2f2;
     border-radius: 25px;
-    padding: 40px;
+    padding: 32px;
     row-gap: 30px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     flex-basis: 67%;
     column-gap: 30px;
-    justify-content: space-between;
     order: 3;
+    justify-content: space-between;
 }
 #accommodation > h2{
-    font-size: 25px;
+    display: flex;
+    font-size: 20px;
     flex-basis: 100%;
 }
 #accommodation > article{
     background-color: white;
-    border-radius: 25px;
+    border-radius: 20px;
     display: flex;
-    flex-basis: 31%;
+    flex-basis: 30%;
+    height: 180px;
 }
 #accommodation article a{
     display: flex;
@@ -266,27 +278,41 @@ h1{
 #accommodation article a > figure{
     flex-basis: 100%;
     display: flex;
+    height: 60%;
 }
-#accommodation article a figure img{
+#accommodation article a figure > img{
+    display: flex;
     object-fit: cover;
-    height: 130px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    height: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
     width: 100%;
 }
 #accommodation article a > div{
     display: flex;
-    row-gap: 7px;
     flex-direction: column;
-    padding: 10px;
+    row-gap: 6px;
+    flex-basis: 100%;
+    padding-left: 10px;
+    height: 40%;
+}
+#accommodation article a div > h3{
+    padding-top: 7px;
+}
+#accommodation article a div > p{
+    font-size: 11px;
+}
+#accommodation article a div div{
+    display: flex;
 }
 #accommodation article a div div i{
     color: #0065fc;
+    font-size: 12px;
 }
 #accommodation > a{
     font-weight: bold;
     flex-basis: 100%;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 /* Activities */
@@ -335,4 +361,3 @@ h1{
 #activities > div:nth-child(1) article a {
     background-color: #0065fc;
 }
-/*azdeazdazd*/
