@@ -320,44 +320,111 @@ h1{
 #activities{
     order: 5;
     display: flex;
-    flex-direction: column;
-    padding: 60px 0;
-    column-gap: 10px;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
     row-gap: 20px;
+    padding: 20px 0;
+    justify-content: space-between;
 }
 #activities > h2{
-    display: flex;
     flex-basis: 100%;
-    font-size: 25px;
+    font-size: 20px;
+}
+#activities div:nth-child(2){
+    order: 1;
+}
+#activities div:nth-child(3){
+    order: 2;
+}
+#activities div:nth-child(4){
+    order: 3;
+}
+#activities div:nth-child(5){
+    order: 4;
 }
 #activities > div{
-    display: flex;
-    flex-basis: 100%;
+    flex-basis: 22%;
 }
-#activities div > article{
-    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.5);
-    border-radius: 20px;
-    display: flex;
+#activities div article a > h3{
     flex-basis: 100%;
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    font-size: 13px;
+}
+#activities div article > a{
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.5);
     height: 100%;
 }
-#activities div article a{
-    flex-basis: 100%;
-}
-#activities div article a > figure{
-    flex-basis: 100%;
-    display: flex;
-    border-top-right-radius: 20px;
+#activities div article figure > img{
     border-top-left-radius: 20px;
-}
-#activities div article a figure > img{
-    display: flex;
-    flex-basis: 100%;
+    border-top-right-radius: 20px;
     object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    width: 100%;
 }
-#activities > div:nth-child(1) article a {
-    background-color: #0065fc;
+#activities div:nth-child(2) article, #activities div:nth-child(4) article{
+    height: 400px;
+}
+#activities div:nth-child(2) article figure img, #activities div:nth-child(4) article figure img{
+    height: 350px;
+}
+#activities div:nth-child(3), #activities div:nth-child(5){
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+#activities div:nth-child(3) article:first-child{
+    height: 220px;
+}
+#activities div:nth-child(3) article figure img:nth-child(1){
+    height: 170px;
+}
+#activities div:nth-child(3) article:nth-child(2){
+    height: 140px;
+}
+#activities div:nth-child(3) article:nth-child(2) figure img{
+    height: 90px;
+}
+#activities div:nth-child(5) article:first-child{
+    height: 170px;
+}
+#activities div:nth-child(5) article figure img:nth-child(1){
+    height: 120px;
+}
+#activities div:nth-child(5) article:nth-child(2){
+    height: 190px;
+}
+#activities div:nth-child(5) article:nth-child(2) figure img{
+    height: 150px;
+}
+
+
+/* Footer */
+footer{
+    background-color: #f2f2f2;
+}
+footer div{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    flex-basis: 35%
+}
+footer div div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin: 0;
+}
+footer div div h2, li{
+    font-size: 15px;
+}
+footer div div nav ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
 }
