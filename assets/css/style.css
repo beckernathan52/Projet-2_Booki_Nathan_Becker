@@ -47,12 +47,15 @@ header nav ul li{
     padding-top: 10px;
     font-size: 15px;
 }
+header li:hover a{
+    color: #0065fc;
+}
 header nav ul > li:hover{
     border-top: 3px solid #0065fc;
 }
 header nav ul li > a{
     display: flex;
-    align-items: center;
+    align-items: center; 
 }
 header a > img{
     max-width: 120px;
@@ -67,7 +70,7 @@ h1{
 }
 
 #mostpopular, #accommodation article a div > h3{
-    font-size: 13px;
+    font-size: 14px;
 }
 #location, #filters p{
     font-size: 15px;
@@ -114,6 +117,9 @@ h1{
     padding: 15px;
     font-weight: bold;
     font-size: 14px;
+}
+#location form button i{
+    display: none;
 }
 
 
@@ -312,7 +318,10 @@ h1{
 #accommodation > a{
     font-weight: bold;
     flex-basis: 100%;
-    font-size: 15px;
+    font-size: 17px;
+}
+#accommodation > a:hover{
+    color: #0065fc;
 }
 
 /* Activities */
@@ -350,7 +359,7 @@ h1{
     display: flex;
     padding-left: 20px;
     align-items: center;
-    font-size: 13px;
+    font-size: 14px;
 }
 #activities div article > a{
     display: flex;
@@ -427,4 +436,257 @@ footer div div nav ul{
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 992px){
+    
+#location, #filters, #mostpopular, #accommodation, #activities{
+    order: 0;
+}
+
+#location, #filters{
+    padding: 20px 20px;
+}
+ 
+/* Header */
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+}
+header > a{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    flex-basis: 100%;
+}
+header a > img{
+    padding-left: 0;
+    padding-bottom: 20px;
+}
+header nav{
+    display: flex;
+    flex-basis: 100%;
+}
+header nav ul > li{
+    border-top: none;
+    border-bottom: 3px solid #f2f2f2;
+    padding-bottom: 15px;
+}
+header nav ul > li:hover{
+    border-top: none;
+    border-bottom: 3px solid #0065fc;
+}
+
+/* Location */
+
+#location{
+    padding: 30px 20px;
+}
+#location form button{
+    border-radius: 15px;
+    font-size: 18px;
+    width: 60px;
+}
+#location form button span{
+    display: none;
+}
+#location form button > i{
+    display: contents;
+}
+
+/* Filters */
+
+#filters{
+    padding: 20px;
+}
+#filters > h2{
+    flex-basis: 100%;
+    margin: 0;
+}
+#filters ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#filters ul li{
+    margin-left: 0;
+}
+
+/* Most popular */
+
+#mostpopular{
+    flex-basis: 100%;
+    border-radius: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 50px;
+    row-gap: 50px;
+    padding: 20px;
+}
+#mostpopular article{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 45%;
+}
+
+/* Accommodation */
+
+#accommodation{
+    flex-basis: 100%;
+    background-color: white;
+    padding: 20px;
+}
+#accommodation article{
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.5);
+}
+#accommodation > a{
+    display: flex;
+    justify-content: center;
+}
+
+/* Activities */
+
+#activities{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    padding: 20px;
+    row-gap: 0;
+}
+#activities > h2{
+    display: flex;
+    flex-basis: 100%;
+}
+#activities div > article{
+    display: flex;
+    width: 100%;
+    max-height: 170px;
+    min-height: 170px;
+}
+#activities > div{
+    display: flex;
+    flex-basis: 100%;
+}
+#activities div > article{
+    height: 170px;
+    margin: 20px;
+}
+#activities div > article a{
+    height: 170px;
+}
+#activities div article a figure > img{
+    max-height: 120px;
+    min-height: 120px;
+    object-fit: cover;
+}
+#activities div:nth-child(3), #activities div:nth-child(5){
+    flex-direction: row;
+}
+
+/* Footer */
+
+footer > div{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 100%;
+    padding: 20px 40px;
+}
+footer div div{
+    flex-basis: 25%;
+}
+}
+
+@media screen and (max-width: 768px){
+
+/* Header */
+header a > img{
+    max-width: 100px;
+}
+
+/* Main */
+#location > p{
+    padding-bottom: 20px;
+}
+
+/* Filters */
+#filters{
+    padding-top: 0;
+    padding-bottom: 40px;
+}
+
+/* Mostpopular */
+#mostpopular{
+    flex-direction: column;
+    row-gap: 20px;
+}
+#mostpopular h2{
+    max-height: 20px;
+    flex-basis: 100%;
+}
+#mostpopular > article{
+    flex-basis: 100%;
+    max-height: 125px;
+    width: 100%;
+}
+
+/* Accommodation */
+#accommodation{
+    flex-direction: column;
+    row-gap: 10px;
+    position: relative;
+}
+#accommodation h2{
+    max-height: 20px;
+    padding-bottom: 30px;
+}
+#accommodation article{
+    max-height: 200px;
+    display: flex;
+}
+#accommodation article a{
+    flex-basis: 100%;
+}
+#accommodation article a > div{
+    display: flex;
+    justify-content: center;
+}
+#accommodation article a div > h3{
+    padding: 0;
+}
+#accommodation > a{
+    display: flex;
+    flex-basis: 100%;
+    position: absolute;
+    bottom: -30px;
+    justify-content: flex-start;
+}
+
+/* Activities */
+#activities{
+    padding-top: 80px;
+    row-gap: 25px;
+    padding-bottom: 40px;
+}
+#activities div article{
+    margin: 0;
+}
+#activities div:nth-child(3), #activities div:nth-child(5){
+    flex-direction: column;
+    row-gap: 25px;
+    margin: 0;
+}
+
+/* Footer */
+footer div{
+    flex-direction: column;
+    padding: 10px;
+    padding-top: 20px;
+}
 }
