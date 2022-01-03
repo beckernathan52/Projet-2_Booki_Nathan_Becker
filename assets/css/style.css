@@ -14,14 +14,7 @@ a{
 section{
     padding: 20px 10px;
 }
-main{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
 
 
 /* Header */
@@ -37,11 +30,11 @@ header nav{
     display: flex;
     flex-basis: 25%;
 }
-header nav ul{
+header ul{
     display: flex;
     flex-basis: 100%;
 }
-header nav ul li{
+header li{
     display: flex;
     justify-content: center;
     flex-basis: 50%;
@@ -52,14 +45,14 @@ header nav ul li{
 header li:hover a{
     color: #0065fc;
 }
-header nav ul > li:hover{
+header li:hover{
     border-top: 3px solid #0065fc;
 }
-header nav ul li > a{
+header li > a{
     display: flex;
     align-items: center; 
 }
-header a > img{
+header img{
     max-width: 120px;
     padding-top: 30px;
     padding-left: 5px;
@@ -71,14 +64,20 @@ header a > img{
 h1{
     font-size: 20px;
 }
-
 #mostpopular, #accommodation article a div > h3{
     font-size: 14px;
 }
 #location, #filters p{
     font-size: 15px;
 }
-
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 /* Location */
 
@@ -96,24 +95,24 @@ h1{
     justify-content: space-between;
     border-radius: 16px;
 }
-#location form input{
+#location input{
     flex-basis: 100%;
     border: none;
     padding-left: 10px;
 }
-#location form input::placeholder{
+#location input::placeholder{
     font-weight: bold;
     opacity: 1;
     font-size: 15px;
 }
-#location form > i{
+#location label{
     background-color: #f2f2f2;
     font-size: 16px;
     padding: 15px 18px;
     border-top-left-radius: 14px;
     border-bottom-left-radius: 14px;
 }
-#location form button{
+#location button{
     background-color: #0065fc;
     border: none;
     border-top-right-radius: 14px;
@@ -123,7 +122,7 @@ h1{
     font-weight: bold;
     font-size: 14px;
 }
-#location form button i{
+#location button i{
     display: none;
 }
 
@@ -143,20 +142,20 @@ h1{
     flex-direction: row;
     display: flex;
 }
-#filters ul li{
+#filters li{
     border: solid 2px #f2f2f2;
     border-radius: 29px;
     margin: 10px;
     font-size: 15px;
 }
-#filters ul li a{
+#filters li a{
     display: flex;
     align-items: center;
     text-align: center;
     font-weight: bold;
     padding-right: 15px;
 }
-#filters ul li a > i{
+#filters li a > i{
     background-color: #DEEBFF;
     width: 50px;
     height: 50px;
@@ -166,7 +165,7 @@ h1{
     margin-right: 10px;
     font-size: 20px;
 }
-#filters ul li:hover{
+#filters li:hover{
     background-color: #deebff;
 }
 #filters h2{
@@ -209,29 +208,22 @@ h1{
     justify-content: space-between;
     font-size: 20px;
 }
-#mostpopular article{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-}
 #mostpopular article > a{
     display: flex;
 }
-#mostpopular article figure{
+#mostpopular figure{
     display: flex;
     width: 70%;
     height: 115px;
 }
-#mostpopular article figure > img{
+#mostpopular img{
     display: flex;
     width: 100%;
     object-fit: cover;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
 }
-#mostpopular article a > div{
+#mostpopular a > div{
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
@@ -240,15 +232,15 @@ h1{
     position: relative;
     padding-left: 15px
 }
-#mostpopular article a div > p{
+#mostpopular div > p{
     font-size: 11px;
 }
-#mostpopular article a div > div{
+#mostpopular div > div{
     display: flex;
     bottom: 10px;
     position: absolute;
 }
-#mostpopular article div div > i{
+#mostpopular div div > i{
     color: #0065fc;
     font-size: 12px;
 }
@@ -275,24 +267,16 @@ h1{
     flex-basis: 100%;
 }
 #accommodation > article{
-    background-color: white;
-    border-radius: 20px;
     display: flex;
     flex-basis: 30%;
     height: 180px;
 }
-#accommodation article a{
-    display: flex;
-    flex-direction: row;
-    padding: 5px;
-    flex-wrap: wrap;
-}
-#accommodation article a > figure{
+#accommodation figure{
     flex-basis: 100%;
     display: flex;
     height: 60%;
 }
-#accommodation article a figure > img{
+#accommodation img{
     display: flex;
     object-fit: cover;
     height: 100%;
@@ -300,7 +284,7 @@ h1{
     border-top-right-radius: 16px;
     width: 100%;
 }
-#accommodation article a > div{
+#accommodation a > div{
     display: flex;
     flex-direction: column;
     row-gap: 6px;
@@ -308,16 +292,16 @@ h1{
     padding-left: 10px;
     height: 40%;
 }
-#accommodation article a div > h3{
+#accommodation h3{
     padding-top: 7px;
 }
-#accommodation article a div > p{
+#accommodation div > p{
     font-size: 11px;
 }
-#accommodation article a div div{
+#accommodation div div{
     display: flex;
 }
-#accommodation article a div div i{
+#accommodation div div i{
     color: #0065fc;
     font-size: 12px;
 }
@@ -342,33 +326,18 @@ h1{
     padding: 40px 0;
     justify-content: space-between;
 }
-#activities > h2{
+#activities h2{
     flex-basis: 100%;
     font-size: 20px;
 }
-#activities div:nth-child(2){
-    order: 1;
-}
-#activities div:nth-child(3){
-    order: 2;
-}
-#activities div:nth-child(4){
-    order: 3;
-}
-#activities div:nth-child(5){
-    order: 4;
-}
-#activities > div{
-    flex-basis: 22%;
-}
-#activities div article a > h3{
+#activities h3{
     flex-basis: 100%;
     display: flex;
     padding-left: 20px;
     align-items: center;
     font-size: 14px;
 }
-#activities div article > a{
+#activities a{
     display: flex;
     border-radius: 20px;
     flex-direction: column;
@@ -376,45 +345,63 @@ h1{
     box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.5);
     height: 100%;
 }
-#activities div article figure > img{
+#activities img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
     width: 100%;
 }
-#activities div:nth-child(2) article, #activities div:nth-child(4) article{
-    height: 400px;
+
+#activities > div, #activities > article{
+    flex-basis: 22%;
 }
-#activities div:nth-child(2) article figure img, #activities div:nth-child(4) article figure img{
-    height: 350px;
-}
-#activities div:nth-child(3), #activities div:nth-child(5){
+#activities div{
     display: flex;
     flex-direction: column;
     row-gap: 40px;
 }
-#activities div:nth-child(3) article:first-child{
+#activities article:nth-of-type(1){
+    order: 1;
+}
+#activities div:nth-of-type(1){
+    order: 2;
+}
+#activities article:nth-of-type(2){
+    order: 3;
+}
+#activities div:nth-of-type(2){
+    order: 4;
+}
+#activities > article{
+    height: 400px;
+}
+#activities > article figure img{
+    height: 350px;
+}
+
+#activities div:nth-of-type(1) article:nth-of-type(1){
     height: 220px;
 }
-#activities div:nth-child(3) article figure img:nth-child(1){
+#activities > div:nth-of-type(1) article figure img:nth-of-type(1){
     height: 170px;
 }
-#activities div:nth-child(3) article:nth-child(2){
+#activities div:nth-of-type(1) article:nth-of-type(2){
     height: 140px;
 }
-#activities div:nth-child(3) article:nth-child(2) figure img{
+#activities div:nth-of-type(1) article:nth-of-type(2) figure img{
     height: 90px;
 }
-#activities div:nth-child(5) article:first-child{
+
+#activities div:nth-of-type(2) article:nth-of-type(1){
     height: 170px;
 }
-#activities div:nth-child(5) article figure img:nth-child(1){
+#activities div:nth-of-type(2) article:nth-of-type(1) figure img{
     height: 120px;
 }
-#activities div:nth-child(5) article:nth-child(2){
+#activities div:nth-of-type(2) article:nth-of-type(2){
     height: 190px;
 }
-#activities div:nth-child(5) article:nth-child(2) figure img{
+#activities div:nth-of-type(2) article:nth-of-type(2) figure img{
     height: 150px;
 }
 
@@ -429,7 +416,7 @@ footer div{
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px 0;
-    flex-basis: 35%
+    flex-basis: 35%;
 }
 footer div div{
     display: flex;
@@ -437,10 +424,10 @@ footer div div{
     row-gap: 10px;
     margin: 0;
 }
-footer div div h2, li{
+footer h2, li{
     font-size: 15px;
 }
-footer div div nav ul{
+footer ul{
     display: flex;
     flex-direction: column;
     row-gap: 10px;
@@ -473,7 +460,7 @@ header > a{
     justify-content: center;
     flex-basis: 100%;
 }
-header a > img{
+header img{
     padding-left: 0;
     padding-bottom: 20px;
 }
@@ -481,12 +468,12 @@ header nav{
     display: flex;
     flex-basis: 100%;
 }
-header nav ul > li{
+header ul li{
     border-top: none;
     border-bottom: 3px solid #f2f2f2;
     padding-bottom: 15px;
 }
-header nav ul > li:hover{
+header ul > li:hover{
     border-top: none;
     border-bottom: 3px solid #0065fc;
 }
@@ -497,18 +484,20 @@ header nav ul > li:hover{
 #location{
     padding: 30px 20px;
 }
-#location form button{
+#location button{
     border-radius: 15px;
     font-size: 18px;
     width: 60px;
 }
-#location form button span{
+#location button span{
     display: none;
 }
-#location form button > i{
+#location button > i{
     display: contents;
 }
-
+#location label{
+    padding: 18px 18px;
+}
 
 /* Filters */
 
@@ -572,36 +561,29 @@ header nav ul > li:hover{
     flex-wrap: wrap;
     flex-basis: 100%;
     padding: 20px;
-    row-gap: 0;
+    row-gap: 20px;
 }
-#activities > h2{
+#activities h2{
     display: flex;
     flex-basis: 100%;
 }
-#activities div > article{
+#activities article{
     display: flex;
     width: 100%;
     max-height: 170px;
     min-height: 170px;
+    flex-basis: 100%;
 }
 #activities > div{
     display: flex;
     flex-basis: 100%;
+    flex-direction: row;
+    column-gap: 20px;
 }
-#activities div > article{
-    height: 170px;
-    margin: 20px;
-}
-#activities div > article a{
-    height: 170px;
-}
-#activities div article a figure > img{
+#activities figure > img{
     max-height: 120px;
     min-height: 120px;
     object-fit: cover;
-}
-#activities div:nth-child(3), #activities div:nth-child(5){
-    flex-direction: row;
 }
 
 
@@ -625,12 +607,12 @@ footer div div{
 
 /* Header */
 
-header a > img{
+header img{
     max-width: 100px;
 }
 
 
-/* Main */
+/* Location */
 
 #location > p{
     padding-bottom: 20px;
@@ -679,14 +661,11 @@ header a > img{
     max-height: 200px;
     display: flex;
 }
-#accommodation article a{
-    flex-basis: 100%;
-}
-#accommodation article a > div{
+#accommodation a > div{
     display: flex;
     justify-content: center;
 }
-#accommodation article a div > h3{
+#accommodation h3{
     padding: 0;
 }
 #accommodation > a{
@@ -705,10 +684,10 @@ header a > img{
     row-gap: 25px;
     padding-bottom: 40px;
 }
-#activities div article{
+#activities article{
     margin: 0;
 }
-#activities div:nth-child(3), #activities div:nth-child(5){
+#activities div:nth-of-type(1), #activities div:nth-of-type(2){
     flex-direction: column;
     row-gap: 25px;
     margin: 0;
