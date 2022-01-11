@@ -1,9 +1,7 @@
 *{
     box-sizing: border-box;
 }
-h1, h2, h3{
-    font-weight: bold;
-}
+
 body{
     font-family: 'raleway';
 }
@@ -11,10 +9,6 @@ a{
     text-decoration: none;
     color: black;
 }
-section{
-    padding: 20px 10px;
-}
-
 
 
 /* Header */
@@ -61,23 +55,32 @@ header img{
 
 /* Main */
 
-h1{
+h1,h2{
     font-size: 20px;
 }
-#mostpopular, #accommodation article a div > h3{
+h1, h2, h3{
+    font-weight: bold;
+}
+#mostpopular,#activities, #accommodation article a div > h3{
     font-size: 14px;
 }
 #location, #filters p{
     font-size: 15px;
 }
 main{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
 }
+section{
+    padding: 20px 10px;
+}
+
+main > div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
 
 /* Location */
 
@@ -85,8 +88,6 @@ main{
     display: flex;
     flex-direction: column;
     row-gap: 15px;
-    flex-basis: 100%;
-    order: 1;
 }
 #location form{
     display: flex;
@@ -96,7 +97,7 @@ main{
     border-radius: 16px;
 }
 #location input{
-    flex-basis: 100%;
+    width: 100%;
     border: none;
     padding-left: 10px;
 }
@@ -135,8 +136,6 @@ main{
     align-items: center;
     padding-top: 0px;
     padding-bottom: 35px;
-    flex-basis: 100%;
-    order: 2;
 }
 #filters ul{
     flex-direction: row;
@@ -161,7 +160,6 @@ main{
     height: 50px;
     border-radius: 25px;
     padding: 15px 4px;
-    color: #0065fc;
     margin-right: 10px;
     font-size: 20px;
 }
@@ -170,20 +168,14 @@ main{
 }
 #filters h2{
     margin-right: 30px;
-    font-size: 18px;
 }
 #filters p{
-    flex-basis: 100%;
-    align-items: center;
-    display: flex;
     margin-top: 20px;
 }
 #filters p i{
     border: solid 1px;
-    color: #0065fc;
     padding: 5px 9px;
     border-radius: 50px;
-    display: flex;
     font-size: 12px;
     border-color: #deebff;
     margin-right: 10px;
@@ -198,27 +190,24 @@ main{
     flex-direction: column;
     border-radius: 25px;
     row-gap: 30px;
-    flex-basis: 30%;
-    padding: 32px;
-    order: 4;
+    width: 30%;
+    padding: 30px;
 }
 #mostpopular h2{
     display: flex;
     flex-basis: 100%;
     justify-content: space-between;
-    font-size: 20px;
 }
 #mostpopular article > a{
     display: flex;
 }
 #mostpopular figure{
-    display: flex;
-    width: 70%;
+    width: 80%;
     height: 115px;
 }
 #mostpopular img{
-    display: flex;
     width: 100%;
+    height: 100%;
     object-fit: cover;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
@@ -240,10 +229,7 @@ main{
     bottom: 10px;
     position: absolute;
 }
-#mostpopular div div > i{
-    color: #0065fc;
-    font-size: 12px;
-}
+
 
 
 /* Accommodation */
@@ -256,28 +242,22 @@ main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-basis: 67%;
+    width: 67%;
     column-gap: 30px;
-    order: 3;
     justify-content: space-between;
 }
 #accommodation > h2{
-    display: flex;
     font-size: 20px;
-    flex-basis: 100%;
+    width: 100%;
 }
 #accommodation > article{
-    display: flex;
-    flex-basis: 30%;
+    width: 30%;
     height: 180px;
 }
 #accommodation figure{
-    flex-basis: 100%;
-    display: flex;
     height: 60%;
 }
 #accommodation img{
-    display: flex;
     object-fit: cover;
     height: 100%;
     border-top-left-radius: 16px;
@@ -287,8 +267,7 @@ main{
 #accommodation a > div{
     display: flex;
     flex-direction: column;
-    row-gap: 6px;
-    flex-basis: 100%;
+    row-gap: 10px;
     padding-left: 10px;
     height: 40%;
 }
@@ -301,14 +280,8 @@ main{
 #accommodation div div{
     display: flex;
 }
-#accommodation div div i{
-    color: #0065fc;
-    font-size: 12px;
-}
 #accommodation > a{
     font-weight: bold;
-    flex-basis: 100%;
-    font-size: 17px;
 }
 #accommodation > a:hover{
     color: #0065fc;
@@ -318,7 +291,6 @@ main{
 /* Activities */
 
 #activities{
-    order: 5;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -327,7 +299,7 @@ main{
     justify-content: space-between;
 }
 #activities h2{
-    flex-basis: 100%;
+    width: 100%;
     font-size: 20px;
 }
 #activities h3{
@@ -335,15 +307,14 @@ main{
     display: flex;
     padding-left: 20px;
     align-items: center;
-    font-size: 14px;
 }
 #activities a{
     display: flex;
     border-radius: 20px;
     flex-direction: column;
-    width: 100%;
     box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.5);
     height: 100%;
+    width: 100%;
 }
 #activities img{
     border-top-left-radius: 20px;
@@ -353,25 +324,14 @@ main{
 }
 
 #activities > div, #activities > article{
-    flex-basis: 22%;
+    width: 22%;
 }
 #activities div{
     display: flex;
     flex-direction: column;
     row-gap: 40px;
 }
-#activities article:nth-of-type(1){
-    order: 1;
-}
-#activities div:nth-of-type(1){
-    order: 2;
-}
-#activities article:nth-of-type(2){
-    order: 3;
-}
-#activities div:nth-of-type(2){
-    order: 4;
-}
+
 #activities > article{
     height: 400px;
 }
@@ -411,35 +371,24 @@ main{
 footer{
     background-color: #f2f2f2;
 }
-footer div{
+footer > div{
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 0;
-    flex-basis: 35%;
+    padding: 40px 0;
 }
 footer div div{
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    margin: 0;
+    width: 33%;
 }
-footer h2, li{
+footer h2, footer li{
     font-size: 15px;
-}
-footer ul{
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
+    padding-bottom: 10px;
 }
 
 
 /* Responsive */
 @media screen and (max-width: 992px){
-    
-#location, #filters, #mostpopular, #accommodation, #activities{
-    order: 0;
-}
+
 
 #location, #filters{
     padding: 20px;
@@ -449,23 +398,19 @@ footer ul{
 /* Header */
 
 header{
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
 }
 header > a{
-    display: flex;
-    padding: 0;
-    justify-content: center;
-    flex-basis: 100%;
+    text-align: center;
+    width: 100%;
 }
 header img{
     padding-left: 0;
     padding-bottom: 20px;
 }
 header nav{
-    display: flex;
     flex-basis: 100%;
 }
 header ul li{
@@ -478,6 +423,11 @@ header ul > li:hover{
     border-bottom: 3px solid #0065fc;
 }
 
+/* Main */
+
+main > div{
+    flex-direction: column;
+}
 
 /* Location */
 
@@ -504,12 +454,7 @@ header ul > li:hover{
 #filters{
     padding: 20px;
 }
-#filters > h2{
-    flex-basis: 100%;
-    margin: 0;
-}
 #filters ul{
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -521,7 +466,6 @@ header ul > li:hover{
 /* Most popular */
 
 #mostpopular{
-    flex-basis: 100%;
     border-radius: 0;
     flex-direction: row;
     flex-wrap: wrap;
@@ -529,10 +473,9 @@ header ul > li:hover{
     column-gap: 50px;
     row-gap: 50px;
     padding: 20px;
+    width: 100%;
 }
 #mostpopular article{
-    flex-direction: row;
-    flex-wrap: wrap;
     width: 45%;
 }
 
@@ -540,42 +483,27 @@ header ul > li:hover{
 /* Accommodation */
 
 #accommodation{
-    flex-basis: 100%;
     background-color: white;
     padding: 20px;
+    width: 100%;
 }
 #accommodation article{
     box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.5);
 }
-#accommodation > a{
-    display: flex;
-    justify-content: center;
-}
+
 
 
 /* Activities */
 
 #activities{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-basis: 100%;
     padding: 20px;
-    row-gap: 20px;
-}
-#activities h2{
-    display: flex;
-    flex-basis: 100%;
 }
 #activities article{
-    display: flex;
     width: 100%;
     max-height: 170px;
     min-height: 170px;
-    flex-basis: 100%;
 }
 #activities > div{
-    display: flex;
     flex-basis: 100%;
     flex-direction: row;
     column-gap: 20px;
@@ -590,13 +518,7 @@ header ul > li:hover{
 /* Footer */
 
 footer > div{
-    display: flex;
-    justify-content: space-between;
-    flex-basis: 100%;
-    padding: 20px 40px;
-}
-footer div div{
-    flex-basis: 25%;
+    padding: 20px;
 }
 }
 
@@ -630,17 +552,13 @@ header img{
 /* Mostpopular */
 
 #mostpopular{
-    flex-direction: column;
     row-gap: 20px;
     padding: 30px 20px;
 }
 #mostpopular h2{
     max-height: 20px;
-    flex-basis: 100%;
 }
 #mostpopular > article{
-    flex-basis: 100%;
-    max-height: 125px;
     width: 100%;
 }
 
@@ -659,21 +577,17 @@ header img{
 }
 #accommodation article{
     max-height: 200px;
-    display: flex;
+    width: 100%;
 }
 #accommodation a > div{
-    display: flex;
     justify-content: center;
 }
 #accommodation h3{
     padding: 0;
 }
 #accommodation > a{
-    display: flex;
-    flex-basis: 100%;
     position: absolute;
     bottom: -30px;
-    justify-content: flex-start;
 }
 
 
@@ -700,5 +614,8 @@ footer div{
     flex-direction: column;
     padding: 10px;
     padding-top: 20px;
+}
+footer div div{
+    width: 100%;
 }
 }
