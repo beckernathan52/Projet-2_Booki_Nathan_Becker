@@ -61,7 +61,7 @@ h1,h2{
 h1, h2, h3{
     font-weight: bold;
 }
-#mostpopular,#activities, #accommodation article a div > h3{
+#mostpopular, #accommodation article a div > h3{
     font-size: 13px;
 }
 #location, #filters p{
@@ -194,7 +194,6 @@ main > div{
     display: flex;
     flex-basis: 100%;
     justify-content: space-between;
-    max-height: 20px;
 }
 #mostpopular article > a{
     display: flex;
@@ -470,7 +469,7 @@ main > div{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px 20px 50px 20px;
+    padding: 40px 20px 50px 20px;
     width: 100%;
 }
 #mostpopular article{
@@ -485,10 +484,11 @@ main > div{
 #mostpopular img{
     border-top-right-radius: 16px;
     border-bottom-left-radius: 0px;
+    object-position: 50% 65%;
 }
 #mostpopular a > div{
-    padding: 7px 0px 0px 10px;
-    min-height: 80px;
+    padding: 10px 0px 0px 10px;
+    min-height: 75px;
 }
 #mostpopular div > div{
     bottom: 5px;
@@ -499,7 +499,7 @@ main > div{
 
 #accommodation{
     background-color: white;
-    padding: 20px;
+    padding: 40px 20px;
     width: 100%;
 }
 #accommodation article{
