@@ -62,7 +62,7 @@ h1, h2, h3{
     font-weight: bold;
 }
 #mostpopular,#activities, #accommodation article a div > h3{
-    font-size: 14px;
+    font-size: 13px;
 }
 #location, #filters p{
     font-size: 15px;
@@ -70,11 +70,8 @@ h1, h2, h3{
 main{
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
 }
-section{
-    padding: 20px 10px;
-}
-
 main > div{
     display: flex;
     flex-direction: row-reverse;
@@ -197,6 +194,7 @@ main > div{
     display: flex;
     flex-basis: 100%;
     justify-content: space-between;
+    max-height: 20px;
 }
 #mostpopular article > a{
     display: flex;
@@ -243,7 +241,6 @@ main > div{
     flex-direction: row;
     flex-wrap: wrap;
     width: 67%;
-    column-gap: 30px;
     justify-content: space-between;
 }
 #accommodation > h2{
@@ -272,7 +269,7 @@ main > div{
     height: 40%;
 }
 #accommodation h3{
-    padding-top: 7px;
+    padding-top: 10px;
 }
 #accommodation div > p{
     font-size: 11px;
@@ -295,7 +292,7 @@ main > div{
     flex-direction: row;
     flex-wrap: wrap;
     row-gap: 20px;
-    padding: 40px 0;
+    padding: 60px 0px 40px 0px;
     justify-content: space-between;
 }
 #activities h2{
@@ -305,14 +302,15 @@ main > div{
 #activities h3{
     flex-basis: 100%;
     display: flex;
-    padding-left: 20px;
+    padding: 0px 20px;
     align-items: center;
+    font-size: 14px;
 }
 #activities a{
     display: flex;
     border-radius: 20px;
-    flex-direction: column;
-    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.5);
+    flex-direction: column; 
+    box-shadow: 0px 0px 35px 3px rgba(0,0,0,0.15);
     height: 100%;
     width: 100%;
 }
@@ -375,7 +373,7 @@ footer > div{
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 40px 20px;
 }
 footer div div{
     width: 33%;
@@ -424,6 +422,9 @@ header ul > li:hover{
 
 /* Main */
 
+main{
+    padding: 0;
+}
 main > div{
     flex-direction: column;
 }
@@ -469,7 +470,7 @@ main > div{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 20px 50px 20px;
     width: 100%;
 }
 #mostpopular article{
@@ -486,13 +487,14 @@ main > div{
     border-bottom-left-radius: 0px;
 }
 #mostpopular a > div{
-    padding: 7px 0px 0px 5px;
-    min-height: 85px;
-    row-gap: 10px;
+    padding: 7px 0px 0px 10px;
+    min-height: 80px;
 }
 #mostpopular div > div{
     bottom: 5px;
 }
+
+
 /* Accommodation */
 
 #accommodation{
@@ -501,7 +503,7 @@ main > div{
     width: 100%;
 }
 #accommodation article{
-    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 35px 3px rgba(0,0,0,0.15);
 }
 
 
@@ -509,27 +511,36 @@ main > div{
 /* Activities */
 
 #activities{
-    padding: 20px;
+    padding: 20px 20px 50px 20px;
+    row-gap: 30px;
 }
 #activities article{
     width: 100%;
-    max-height: 170px;
-    min-height: 170px;
+    max-height: 200px;
+    min-height: 200px;
+    width: 48%;
+}
+#activities > article{
+    order: 1;
 }
 #activities > div{
     flex-basis: 100%;
     flex-direction: row;
-    column-gap: 20px;
+    justify-content: space-between;
+    order: 2;
 }
 #activities figure > img{
-    max-height: 120px;
-    min-height: 120px;
+    max-height: 150px;
+    min-height: 150px;
     object-fit: cover;
 }
 
 
 /* Footer */
 
+footer{
+    padding: 0;
+}
 footer > div{
     padding: 20px;
 }
