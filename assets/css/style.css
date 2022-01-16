@@ -389,7 +389,6 @@ footer h2, footer li{
 /* Responsive */
 @media screen and (max-width: 992px){
 
-
 #location, #filters{
     padding: 20px;
 }
@@ -469,17 +468,31 @@ main > div{
     border-radius: 0;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 50px;
-    row-gap: 50px;
+    justify-content: space-between;
     padding: 20px;
     width: 100%;
 }
 #mostpopular article{
-    width: 45%;
+    width: 30%;
 }
-
-
+#mostpopular article a{
+    flex-direction: column;
+}
+#mostpopular figure{
+    width: 100%;
+}
+#mostpopular img{
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 0px;
+}
+#mostpopular a > div{
+    padding: 7px 0px 0px 5px;
+    min-height: 85px;
+    row-gap: 10px;
+}
+#mostpopular div > div{
+    bottom: 5px;
+}
 /* Accommodation */
 
 #accommodation{
