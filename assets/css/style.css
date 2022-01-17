@@ -369,8 +369,11 @@ footer > div{
 footer div div{
     width: 33%;
 }
-footer h2, footer li{
-    font-size: 15px;
+footer h2{
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+ footer li{
     padding-bottom: 10px;
 }
 
@@ -570,7 +573,7 @@ header img{
 
 #mostpopular{
     row-gap: 10px;
-    padding: 30px 20px;
+    padding: 40px 20px;
     flex-direction: column;
 }
 #mostpopular h2{
