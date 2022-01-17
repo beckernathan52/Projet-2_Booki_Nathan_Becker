@@ -271,6 +271,7 @@ main > div{
 }
 #accommodation > a{
     font-weight: bold;
+    width: 100%;
 }
 #accommodation > a:hover{
     color: #0065fc;
