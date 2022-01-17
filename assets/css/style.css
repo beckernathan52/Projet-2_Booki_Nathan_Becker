@@ -602,6 +602,9 @@ header img{
     max-height: 200px;
     width: 100%;
 }
+#accommodation img{
+    object-position: 50% 65%;
+}
 #accommodation a > div{
     justify-content: center;
 }
