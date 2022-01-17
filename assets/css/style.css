@@ -487,7 +487,6 @@ main > div{
 #mostpopular a > div{
     padding: 10px 0px 0px 10px;
     min-height: 70px;
-    row-gap: 6px;
 }
 #mostpopular div > div{
     bottom: 5px;
