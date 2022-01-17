@@ -48,8 +48,7 @@ header li > a{
 }
 header img{
     max-width: 120px;
-    padding-top: 30px;
-    padding-left: 5px;
+    padding: 30px 0px 0px 5px;
 }
 
 
@@ -131,8 +130,7 @@ main > div{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding-top: 0px;
-    padding-bottom: 35px;
+    padding: 20px 0px 35px 0px;
 }
 #filters ul{
     flex-direction: row;
@@ -176,6 +174,7 @@ main > div{
     font-size: 12px;
     border-color: #deebff;
     margin-right: 10px;
+    margin: 0px 10px 10px 0px;
 }
 
 
@@ -213,10 +212,9 @@ main > div{
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
-    padding: 10px;
+    padding: 10px 10px 10px 15px;
     row-gap: 10px;
     position: relative;
-    padding-left: 15px
 }
 #mostpopular div > p{
     font-size: 11px;
@@ -234,7 +232,7 @@ main > div{
 #accommodation{
     background-color: #f2f2f2;
     border-radius: 25px;
-    padding: 32px;
+    padding: 30px;
     row-gap: 30px;
     display: flex;
     flex-direction: row;
@@ -243,7 +241,6 @@ main > div{
     justify-content: space-between;
 }
 #accommodation > h2{
-    font-size: 20px;
     width: 100%;
 }
 #accommodation > article{
@@ -251,7 +248,7 @@ main > div{
     height: 180px;
 }
 #accommodation figure{
-    height: 60%;
+    height: 65%;
 }
 #accommodation img{
     object-fit: cover;
@@ -263,12 +260,8 @@ main > div{
 #accommodation a > div{
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
-    padding-left: 10px;
-    height: 40%;
-}
-#accommodation h3{
-    padding-top: 10px;
+    row-gap: 6px;
+    padding: 8px 0px 0px 10px;
 }
 #accommodation div > p{
     font-size: 11px;
@@ -296,7 +289,6 @@ main > div{
 }
 #activities h2{
     width: 100%;
-    font-size: 20px;
 }
 #activities h3{
     flex-basis: 100%;
@@ -383,6 +375,7 @@ footer h2, footer li{
 }
 
 
+
 /* Responsive */
 @media screen and (max-width: 992px){
 
@@ -451,7 +444,7 @@ main > div{
 /* Filters */
 
 #filters{
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
 }
 #filters ul{
     flex-direction: row;
@@ -488,7 +481,8 @@ main > div{
 }
 #mostpopular a > div{
     padding: 10px 0px 0px 10px;
-    min-height: 75px;
+    min-height: 70px;
+    row-gap: 6px;
 }
 #mostpopular div > div{
     bottom: 5px;
@@ -568,22 +562,33 @@ header img{
 /* Filters */
 
 #filters{
-    padding-top: 0;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 
 /* Mostpopular */
 
 #mostpopular{
-    row-gap: 20px;
+    row-gap: 10px;
     padding: 30px 20px;
+    flex-direction: column;
 }
 #mostpopular h2{
-    max-height: 20px;
+    padding-bottom: 20px;
 }
 #mostpopular > article{
     width: 100%;
+}
+#mostpopular article a{
+    display: flex;
+    flex-direction: row;
+}
+#mostpopular figure {
+    width: 60%;
+}
+#mostpopular img{
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 16px;
 }
 
 
@@ -618,17 +623,17 @@ header img{
 /* Activities */
 
 #activities{
-    padding-top: 80px;
     row-gap: 25px;
-    padding-bottom: 40px;
+    padding: 80px 20px 40px 20px;
 }
 #activities article{
-    margin: 0;
+    order: 0;
+    width: 100%;
 }
-#activities div:nth-of-type(1), #activities div:nth-of-type(2){
+#activities > div{
     flex-direction: column;
     row-gap: 25px;
-    margin: 0;
+    order: 0;
 }
 
 
@@ -636,8 +641,7 @@ header img{
 
 footer div{
     flex-direction: column;
-    padding: 10px;
-    padding-top: 20px;
+    padding: 20px 10px 10px 10px;
 }
 footer div div{
     width: 100%;
