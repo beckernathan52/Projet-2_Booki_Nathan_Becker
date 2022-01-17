@@ -249,7 +249,7 @@ main > div{
     height: 180px;
 }
 #accommodation figure{
-    height: 65%;
+    height: 60%;
 }
 #accommodation img{
     object-fit: cover;
@@ -261,8 +261,9 @@ main > div{
 #accommodation a > div{
     display: flex;
     flex-direction: column;
-    row-gap: 6px;
+    row-gap: 10px;
     padding: 8px 0px 0px 10px;
+    height: 40%;
 }
 #accommodation div > p{
     font-size: 11px;
@@ -604,9 +605,6 @@ header img{
 }
 #accommodation img{
     object-position: 50% 65%;
-}
-#accommodation a > div{
-    justify-content: center;
 }
 #accommodation h3{
     padding: 0;
