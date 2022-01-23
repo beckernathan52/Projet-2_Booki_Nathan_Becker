@@ -307,7 +307,6 @@ main > div{
     flex-direction: column;
     row-gap: 40px;
 }
-
 #activities > article{
     height: 400px;
 }
