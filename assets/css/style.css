@@ -48,7 +48,7 @@ header li > a{
     align-items: center; 
 }
 header img{
-    max-width: 120px;
+    width: 120px;
     padding: 30px 0px 0px 5px;
 }
 
@@ -531,7 +531,7 @@ footer h2{
         /* Header */
 
         header img{
-            max-width: 100px;
+            width: 100px;
         }
 
 
