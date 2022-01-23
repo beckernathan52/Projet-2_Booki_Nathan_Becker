@@ -1,15 +1,25 @@
 .grey{
     color: lightgray;
 }
+
 .card{
     background-color: white;
     border-radius: 20px;
     padding: 5px;
 }
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    flex-basis: 100%;
+}
+
 .blue{
     color: #0065fc;
     
 }
+
 .starsize{
     font-size: 12px;
 }
