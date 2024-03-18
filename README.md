@@ -2,3 +2,4 @@
 - Utiliser les balises sémantiques
 - Intégrer une maquette en responsive (ordinateur, tablette et mobile)
 - Validation du code au W3C
+- Mettre en place un environnement de développement
