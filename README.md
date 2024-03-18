@@ -3,3 +3,4 @@
 - Intégrer une maquette en responsive (ordinateur, tablette et mobile) en desktop first avec HTML & CSS
 - Validation du code au W3C
 - Mettre en place un environnement de développement
+- Utiliser Git pour le versionning
