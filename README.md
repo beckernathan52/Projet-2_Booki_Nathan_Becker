@@ -1,5 +1,5 @@
 # Projet n°2: "Transformez une maquette en site web avec HTML &amp; CSS", Parcours "Développeur Web" Openclassrooms
 - Utiliser les balises sémantiques
-- Intégrer une maquette en responsive (ordinateur, tablette et mobile)
+- Intégrer une maquette en responsive (ordinateur, tablette et mobile) en code HTML & CSS
 - Validation du code au W3C
 - Mettre en place un environnement de développement
